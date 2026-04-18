@@ -1,0 +1,31 @@
+# Git
+.git
+.gitignore
+
+# Data (not needed in API image)
+data/
+
+# Notebooks (not needed in API image)
+notebooks/
+results/
+
+# IDE / OS
+.vscode/
+.DS_Store
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Docs
+README.md
+LICENSE
+
+# Logs (generated at runtime)
+logs/
+
+# Source drafts
+src/
