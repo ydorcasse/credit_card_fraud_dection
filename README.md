@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection
 
-End-to-end machine learning pipeline for detecting fraudulent credit card transactions — from exploratory analysis to model training and REST API deployment.
+End-to-end machine learning pipeline for detecting fraudulent credit card transactions, from exploratory analysis to model training and REST API deployment.
 
 ## Dataset
 
@@ -11,7 +11,7 @@ The dataset contains **284,807** credit card transactions made by European cardh
 | Total transactions | 284,807 |
 | Fraudulent transactions | 492 (0.17%) |
 | Features | 30 (Time, Amount, V1–V28 PCA-transformed) |
-| Target | `Class` — 0 = legitimate, 1 = fraud |
+| Target | `Class` : 0 = legitimate, 1 = fraud |
 
 ## Project Structure
 
@@ -53,7 +53,7 @@ Trained with three sampling strategies (baseline, SMOTE, undersampling):
 | Logistic Regression | SMOTE | 0.765 | 0.781 |
 
 ### Unsupervised Model
-- **Isolation Forest** — trained only on legitimate transactions, detects novel anomalies without labels
+- **Isolation Forest**  trained only on legitimate transactions, detects novel anomalies without labels
 
 The best model (Random Forest + SMOTE) is saved and served via the API.
 
@@ -132,9 +132,9 @@ streamlit run streamlit_app.py
 ```
 
 **Pages:**
-- **Dashboard** — Model metrics, AUPRC/F1 comparison charts, precision-recall scatter
-- **Predict** — Real-time fraud prediction with gauge visualization (manual form or JSON input)
-- **Data Explorer** — Dataset statistics, class distribution, amount distributions, feature correlations
+- **Dashboard**: Model metrics, AUPRC/F1 comparison charts, precision-recall scatter
+- **Predict**: Real-time fraud prediction with gauge visualization (manual form or JSON input)
+- **Data Explorer**: Dataset statistics, class distribution, amount distributions, feature correlations
 
 ## Logging
 
