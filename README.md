@@ -70,8 +70,8 @@ The best model (Random Forest + SMOTE) is saved and served via the API.
 git clone <repo-url>
 cd credit_card_fraud_detection
 
-python -m venv .venv
-source .venv/bin/activate
+conda create -n fraud-detection python=3.11
+conda activate fraud-detection
 pip install -r requirements.txt
 ```
 
@@ -85,14 +85,14 @@ python api/app.py
 
 ```bash
 docker build -t fraud-detection-api .
-docker run -p 5000:5000 fraud-detection-api
+docker run -p 5001:5001 fraud-detection-api
 ```
 
 ### Test the API
 
 **Health check:**
 ```bash
-curl http://localhost:5000/health
+curl http://localhost:5001/health
 ```
 
 **Prediction:**
