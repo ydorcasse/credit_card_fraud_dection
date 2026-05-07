@@ -3,7 +3,7 @@ gunicorn==23.0.0
 imbalanced-learn==0.14.1
 joblib==1.5.3
 numpy==2.4.3
-pandas==3.0.1
+pandas==2.3.3
 plotly==6.1.2
 scikit-learn==1.8.0
 streamlit==1.45.1
